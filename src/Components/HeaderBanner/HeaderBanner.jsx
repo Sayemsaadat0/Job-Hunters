@@ -11,7 +11,7 @@ const HeaderBanner = () => {
             </div>
 
             <div className=''>
-                <img className='w-full m-auto' src="headerImage.jpg" alt="" />
+                <img src="headerImage.jpg" alt="" />
             </div>
         </div>
     );
