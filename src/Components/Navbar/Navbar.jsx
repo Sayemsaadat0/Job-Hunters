@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className='  md:flex justify-between items-center   md:mx-48 md:my-10 py-5'>
+        <nav className='  md:flex justify-between items-center   md:mx-44  p-5 '>
            <div>
-           <h3 className='text-2xl font-semibold sm:text-center'>JobHunters</h3>
+           <h3 className='text-3xl font-bold sm:text-center'>Job<span className='text-teal-400'>Hunters</span></h3>
            </div>
 
             <div className='sm:text-center sm:my-4'>
@@ -16,7 +16,7 @@ const Navbar = () => {
             </div>
 
             <div className='flex justify-center items-center'>
-            <button className="btn px-2 py-0 text-xs "><small>Start Applying</small></button>
+            <button className="btn px-2 py-0 text-xs bg-teal-500 border-0 "><small>Start Applying</small></button>
             </div>
         </nav>
     );
