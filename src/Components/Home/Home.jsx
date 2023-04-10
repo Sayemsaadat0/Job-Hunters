@@ -5,9 +5,8 @@ import HeaderBanner from '../HeaderBanner/HeaderBanner';
 
 const Home = () => {
     return (
-        <div>
+        <div className=''>
           <HeaderBanner></HeaderBanner>
-        
         </div>
     );
 };
