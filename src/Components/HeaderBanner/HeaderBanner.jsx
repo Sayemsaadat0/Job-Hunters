@@ -1,7 +1,7 @@
 import React from 'react';
 const HeaderBanner = () => {
     return (
-        <div className=' md:flex justify-center items-center '>
+        <div className=' md:flex justify-center items-center bg-teal-50'>
             <div className='md:mx-40'>
                 <h1 className='text-5xl  md:w-96 font-bold '>
                 One Step Closer To Your  <br /><span className='text-teal-400'>Dream Job</span>

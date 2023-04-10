@@ -12,6 +12,7 @@ import Main from './LayOut/Main';
 import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog'
+import Error from './Components/Error/Error';
 
 
 
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement : <Error></Error>,
     children : [
       {
         path : '/',
