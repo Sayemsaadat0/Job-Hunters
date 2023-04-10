@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CatagoryList = ({list}) => {
-    console.log(list)
+  
     const {catagorylogo,cataoryTitle,jobsAvailable,id} = list
     return (
         <div>

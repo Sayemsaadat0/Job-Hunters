@@ -4,8 +4,8 @@ import Banner from '../Banner/Banner';
 const AppliedJobs = () => {
     return (
         <div>
-            <Banner></Banner>
-            apllied jobs
+            <Banner>Applied Jobs</Banner>
+          
         </div>
     );
 };

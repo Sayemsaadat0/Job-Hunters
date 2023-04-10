@@ -4,7 +4,7 @@ import Banner from '../Banner/Banner';
 const Statistics = () => {
     return (
         <div>
-            <Banner></Banner>
+            <Banner>Statistics</Banner>
             statusss
         </div>
     );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FeaturedJob = ({data,showAllData,handleSeeMoreClick}) => {
     return (
@@ -20,7 +21,9 @@ const FeaturedJob = ({data,showAllData,handleSeeMoreClick}) => {
         <p>Location : {item.location}</p>
         <p>Salary : {item.salary}</p>
     </div>
-    <button className="btn bg-teal-500 border-0 md:w-1/3">view details</button>
+    <Link to={`/${item.id}`}>
+  <button className="btn bg-teal-500 border-0 md:w-1/3">view details</button>
+  </Link>
   </div>
 </div>
  </div>
@@ -45,10 +48,12 @@ const FeaturedJob = ({data,showAllData,handleSeeMoreClick}) => {
         <p>Location : {item.location}</p>
         <p>Salary : {item.salary}</p>
     </div>
-    <button className="btn bg-teal-500 border-0 md:w-1/3">view details</button>
+  <Link to={`/${item.id}`}>
+  <button className="btn bg-teal-500 border-0 md:w-1/3">view details</button>
+  </Link>
   </div>
 </div>
-
+{/* /:viewdetailsId */}
         
             </div>
           ))}

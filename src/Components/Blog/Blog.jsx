@@ -5,7 +5,7 @@ import Banner from '../Banner/Banner';
 const Blog = () => {
     return (
         <div className=' mx-auto'>
-          <Banner></Banner>
+          <Banner>Blogs</Banner>
           <Blogans></Blogans>
         </div>
     );

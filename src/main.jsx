@@ -13,6 +13,7 @@ import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog'
 import Error from './Components/Error/Error';
+import ViewDetails from './Components/ViewDetails/ViewDetails'
 
 
 
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
         path : '/',
         element : <Home></Home>,
         loader : () => fetch('catagorylist.json')
+      },
+      {
+        path : '/:viewdetailsId',
+        element : <ViewDetails></ViewDetails>,
+        loader : ({params}) => fetch(`featuredlist.json/${params.viewdetailsId}`)
       },
       {
         path : '/statistics',
