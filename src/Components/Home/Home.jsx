@@ -41,7 +41,8 @@ const catagorylists = useLoaderData()
 
           {/* featured job */}
           <FeaturedJobs></FeaturedJobs>
-          <div>
+         
+          <div className=' w-9/12 mx-auto mb-5'>
            <FeaturedJob showAllData={showAllData} setShowAllData={setShowAllData} handleSeeMoreClick={handleSeeMoreClick} data={data} ></FeaturedJob>
           </div>
          
