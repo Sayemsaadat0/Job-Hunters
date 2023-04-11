@@ -5,8 +5,8 @@ const CatagoryList = ({list}) => {
     const {catagorylogo,cataoryTitle,jobsAvailable,id} = list
     return (
         <div>
-           <div className=' md:flex justify-around mx-auto my-10'>
-         <div className="card w-56 bg-base-100 shadow-xl p-4">
+           <div className=' md:flex justify-around mx-auto my-10 '>
+         <div className="card w-56 bg-base-100 shadow-xl p-4 hover:bg-teal-100  hover:shadow-amber-200 transform duration-500 hover:scale-110 ease-in-out">
                 <img className='w-20' src={catagorylogo} alt=""/>
             <div className="card-body px-2 py-0">
                <h2 className="pt-2 text-lg font-semibold">{cataoryTitle}</h2>

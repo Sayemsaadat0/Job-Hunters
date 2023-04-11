@@ -7,7 +7,7 @@ const HeaderBanner = () => {
                 One Step Closer To Your  <br /><span className='text-teal-400'>Dream Job</span>
                 </h1>
                 <p className='my-5 w-80'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, aspernatur Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, rerum.!</p>
-                <button className='btn bg-teal-500 border-0 '><small>Get Started</small></button>
+                <button className='btn bg-teal-500 hover:bg-amber-500 border-0 '><small>Get Started</small></button>
             </div>
 
             <div className=''>

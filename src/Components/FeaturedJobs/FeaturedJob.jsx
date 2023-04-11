@@ -8,7 +8,7 @@ const FeaturedJob = ({data,showAllData,handleSeeMoreClick}) => {
       {data.slice(0, 4).map(item => (
         <div key={item.id}>
 
-<div className="card md:w-96  md:m-12 mb-5 bg-base-100 shadow-xl">
+<div className="card md:w-96  md:m-12 mb-5 bg-base-100 shadow-xl ">
 <img className='w-40' src={item.companyLogo} alt="" />
   <div className="card-body px-0 py-2">
     <h2 className="card-title">{item.jobTitle}</h2>
@@ -22,7 +22,7 @@ const FeaturedJob = ({data,showAllData,handleSeeMoreClick}) => {
         <p>Salary : {item.salary}</p>
     </div>
     <Link to={`/${item.id}`}>
-  <button className="btn bg-teal-500 border-0 md:w-1/3">view details</button>
+  <button className="btn bg-teal-500 hover:bg-amber-500 border-0 md:w-1/3">view details</button>
   </Link>
   </div>
 </div>
@@ -35,7 +35,7 @@ const FeaturedJob = ({data,showAllData,handleSeeMoreClick}) => {
           {data.slice(4,).map(item => (
             <div className='' key={item.id}>
         
-                 <div className="card md:m-12 mb-5 bg-base-100 shadow-xl">
+                 <div className="card md:w-96 md:m-12 mb-5 bg-base-100 shadow-xl">
 <img className='w-40' src={item.companyLogo} alt="" />
   <div className="card-body px-0 py-2">
     <h2 className="card-title">{item.jobTitle}</h2>
@@ -49,7 +49,7 @@ const FeaturedJob = ({data,showAllData,handleSeeMoreClick}) => {
         <p>Salary : {item.salary}</p>
     </div>
   <Link to={`/${item.id}`}>
-  <button className="btn bg-teal-500 border-0 md:w-1/3">view details</button>
+  <button className="btn bg-teal-500 hover:bg-amber-500 border-0 md:w-1/3">view details</button>
   </Link>
   </div>
 </div>
@@ -63,7 +63,7 @@ const FeaturedJob = ({data,showAllData,handleSeeMoreClick}) => {
 
     <div className=' text-center'>
      {!showAllData && (
-        <button className="btn bg-teal-500 border-0 md:w-2/12 mb-10 mt-5" onClick={handleSeeMoreClick}>See More</button>
+        <button className="btn bg-teal-500 hover:bg-amber-500 border-0 md:w-2/12 mb-10 mt-5" onClick={handleSeeMoreClick}>See More</button>
       )}
         </div> 
         </div>

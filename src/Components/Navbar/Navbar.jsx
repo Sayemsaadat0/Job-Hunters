@@ -31,7 +31,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <button className='btn px-2 bg-teal-500 border-0'><small>Start Applying</small></button>
+    <button className='btn px-2 bg-teal-500 hover:bg-amber-500 border-0'><small>Start Applying</small></button>
   </div>
 </div>
         </div>

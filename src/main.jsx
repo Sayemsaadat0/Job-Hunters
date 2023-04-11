@@ -17,6 +17,7 @@ import ViewDetails from './Components/ViewDetails/ViewDetails'
 
 
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,7 +32,7 @@ const router = createBrowserRouter([
       {
         path : '/:viewdetailsId',
         element : <ViewDetails></ViewDetails>,
-        loader : ({params}) => fetch(`featuredlist.json/${params.viewdetailsId}`)
+
       },
       {
         path : '/statistics',
