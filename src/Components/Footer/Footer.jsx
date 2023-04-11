@@ -3,10 +3,10 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-            <footer className="footer md:p-10 bg-teal-50 text-base-content">
-  <div className='w-full '>
-    <img  className='w-40 ' src="FOOTER.png" alt="" />
-    <p  className='w-1/3 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nulla id, hic fuga repellendus neque!</p>
+            <footer className="footer md:p-10 bg-teal-50 text-base-content justify-around">
+  <div className=''>
+    <img  className='w-40 ' src="navtitle.png" alt="" />
+    <p  className='w-48 '>Do you know that according to Google, the monthly search volume for anime related topics is up to over 1 Billion times? </p>
   </div> 
   <div>
     <span className="footer-title">Services</span> 

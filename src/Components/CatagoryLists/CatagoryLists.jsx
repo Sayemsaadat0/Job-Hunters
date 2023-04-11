@@ -5,7 +5,7 @@ const CatagoryLists = () => {
              <div className='text-center m-12'>
                <h1 className='text-2xl font-bold
 '>Job Catagory list </h1>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, id.</p>
+                 <p className='md:w-1/3 mx-auto text-center'>Centuries ago, mankind was slaughtered to near extinction by monstrous humanoid creatures called titans, </p>
              </div>
         </div>
     );
