@@ -6,7 +6,7 @@ const Footer = () => {
             <footer className="footer md:p-10 bg-teal-50 text-base-content">
   <div className='w-full '>
     <img  className='w-40 ' src="FOOTER.png" alt="" />
-    <p  className='w-1/3 sm:mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nulla id, hic fuga repellendus neque!</p>
+    <p  className='w-1/3 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nulla id, hic fuga repellendus neque!</p>
   </div> 
   <div>
     <span className="footer-title">Services</span> 
