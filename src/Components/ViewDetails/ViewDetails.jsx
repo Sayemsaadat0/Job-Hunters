@@ -1,15 +1,20 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Banner from '../Banner/Banner';
 import FeaturedData from '../../../public/featuredlist.json'
+import { addToDb } from '../utilities/fakedb';
 
 const ViewDetails = () => {
 const {viewdetailsId} = useParams()
 
 const selectedItem = FeaturedData.find(item => item.id  ===(viewdetailsId));
 
-const {jobTitle,companyName,isRemoteOrOnsite,location,isFulltime,salary,jobDescription,jobResponsibility,educationalBackgrounds,experience ,phone, email} = selectedItem
+const {jobTitle,location,salary,jobDescription,jobResponsibility,educationalBackgrounds,experience ,phone, email , id} = selectedItem
 
+
+const handleLocalStorage = (id) => {
+    addToDb(id)
+} 
 
 
 
@@ -29,7 +34,7 @@ const {jobTitle,companyName,isRemoteOrOnsite,location,isFulltime,salary,jobDescr
 
             </div>
 
-            <div className=' md:w-60 p-2 card shadow-md shadow-teal-300 border-2 bg-yellow-200'>
+            <div className=' md:w-60 p-2 card shadow-md shadow-teal-300 border-2 bg-yellow-200 hover:scale-110 duration-300 hover:bg-teal-100 hover:shadow-yellow-400'>
                 <h2 className= 'border-b-2 border-b-slate-400 p-4 text-2xl font-bold'>Job Details</h2>
                 <p className='mx-4 my-2  font-bold'> {jobTitle}</p>  
                 <p className='mx-4 '> <span className='font-semibold'>salary </span>: {salary}</p>
@@ -37,9 +42,13 @@ const {jobTitle,companyName,isRemoteOrOnsite,location,isFulltime,salary,jobDescr
                 <p className='m-2'><span className='font-semibold'>phone</span> : {phone}</p>
                 <p className='m-2'><span className='font-semibold'>email</span> : {email}</p>
                 <p className='m-2'><span className='font-semibold'>Addrress</span> : {location}</p>
-
+                <div>
+                    <button onClick={()=>handleLocalStorage(id)} className='btn w-full bg-teal-500 border-0 hover:bg-yellow-200 text-black'>Apply Now</button>
+                </div>
             </div>
            </div>
+           
+               
          
         </div>
     );
