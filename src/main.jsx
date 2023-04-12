@@ -14,6 +14,8 @@ import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog'
 import Error from './Components/Error/Error';
 import ViewDetails from './Components/ViewDetails/ViewDetails'
+import { jobLoaders } from './Components/Loader/GetJobIdFromLocalStorage';
+
 
 
 
@@ -40,7 +42,8 @@ const router = createBrowserRouter([
       },
       {
         path : '/appliedjobs',
-        element : <AppliedJobs></AppliedJobs>
+        element : <AppliedJobs></AppliedJobs>,
+        loader : jobLoaders
       },
      
       {

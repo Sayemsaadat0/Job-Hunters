@@ -1,39 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Banner from '../Banner/Banner';
-import { getShoppingCart } from '../utilities/fakedb';
-import featurejobs from '../../../public/featuredlist.json'
-// import Job from './Job';
+import { useLoaderData } from 'react-router-dom';
+import JobItem from './JobItem';
+
 
 const AppliedJobs = () => {
-        // const storedData = getShoppingCart()
-    
-            
+
+const {newStore} = useLoaderData()
+
 
     return (
         <div>
             <Banner>Applied Jobs</Banner>
-          <div className='flex w-9/12 mx-auto justify-around items-center border-2 shadow-lg hover:bg-cyan-100 hover:shadow-yellow-200 ease-in-out duration-500 rounded-md'>
+          <div >
+          {newStore.length}
+            {
+                newStore.map(jobs => <JobItem key={jobs.id} jobs={jobs}></JobItem>)
 
-          <div>
-                 <img src="a" alt="a" />
-                 </div>
-                 <div>
-                  <h1>job title </h1>
-                  <p>company</p>
-                  <p className='badge'>ontime</p>
-                  <div>
-                      <p>locatons </p>
-                      <p>salary</p>
-                  </div>
-                 </div>
-                 <button >a</button>
-
+            }
           </div>
         </div>
     );
 };
 
 export default AppliedJobs;
+
+
 
 
 

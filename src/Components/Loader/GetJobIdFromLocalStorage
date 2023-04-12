@@ -1,0 +1,30 @@
+import { getShoppingCart } from "../utilities/fakedb"
+
+
+
+
+
+       
+      
+     
+
+
+
+  export  const jobLoaders = async() =>{
+        const jobData = await fetch ('featuredlist.json')
+        const jobApi = await jobData.json()
+
+
+        const storedData = getShoppingCart()
+        let newStore = []
+        for (const id in storedData){
+            const foundedJobs = jobApi.find(jobs=> jobs.id === id)
+            if (foundedJobs){
+                foundedJobs.quantity = storedData[id]
+                newStore.push(foundedJobs)
+              
+            }
+          }
+          return {newStore, jobApi}
+      }
+
