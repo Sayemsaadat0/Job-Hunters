@@ -1,15 +1,5 @@
 import { getShoppingCart } from "../utilities/fakedb"
 
-
-
-
-
-       
-      
-     
-
-
-
   export  const jobLoaders = async() =>{
         const jobData = await fetch ('featuredlist.json')
         const jobApi = await jobData.json()

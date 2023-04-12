@@ -6,7 +6,7 @@ const JobItem = ({jobs}) => {
    
     
     return (
-        <div className=' grid grid-cols-3 w-9/12 mx-auto items-center shadow-lg hover:bg-cyan-100 hover:shadow-yellow-200 ease-in-out duration-500 rounded-md m-10 hover:scale-110'>
+<div className=' grid grid-cols-3 w-9/12 mx-auto items-center shadow-lg  hover:shadow-teal-400 ease-in-out duration-500 rounded-md m-10 hover:scale-110'>
             <div className=''>
                   <img className='' src={companyLogo} alt="s" /> 
                  </div>
@@ -22,13 +22,16 @@ const JobItem = ({jobs}) => {
                       <p>salary : {salary}</p>
                   </div>
                  </div>
-                 <div className='text-right'>
+                 <div className='text-right p-4'>
                  <Link to={`/${jobs.id}`}>
   <button className="btn bg-teal-500 hover:bg-amber-500 border-0 md:w-1/3 ">view details</button>
   </Link>
                  </div>
                 
         </div>
+
+
+      
     );
 };
 
