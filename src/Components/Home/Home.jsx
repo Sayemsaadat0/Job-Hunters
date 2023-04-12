@@ -6,7 +6,6 @@ import { useLoaderData } from 'react-router-dom';
 import CatagoryList from '../CatagoryLists/CatagoryList';
 import CatagoryLists from '../CatagoryLists/CatagoryLists';
 import FeaturedJob from '../FeaturedJobs/FeaturedJob';
-
 const Home = () => {
  const [data, setData] = useState([])
  const [showAllData, setShowAllData] = useState(false);
