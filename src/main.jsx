@@ -16,9 +16,6 @@ import ViewDetails from './Components/ViewDetails/ViewDetails'
 import { jobLoaders } from './Components/Loader/GetJobIdFromLocalStorage';
 
 
-
-
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -48,9 +45,6 @@ const router = createBrowserRouter([
         path : '/blogs',
         element : <Blog></Blog>
       },
-     
-     
-      
     ]
   },
 ]);

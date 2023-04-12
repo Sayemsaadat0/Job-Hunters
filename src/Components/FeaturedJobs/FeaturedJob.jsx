@@ -59,8 +59,6 @@ const FeaturedJob = ({data,showAllData,handleSeeMoreClick}) => {
         </div>
       )}
      </div>
-
-
     <div className=' text-center'>
      {!showAllData && (
         <button className="btn bg-teal-500 hover:bg-amber-500 border-0 md:w-2/12 mb-10 mt-5" onClick={handleSeeMoreClick}>See All Jobs</button>
